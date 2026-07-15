@@ -170,9 +170,9 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "5.0★", label: "GOOGLE RATING" },
-              { value: "42", label: "FIVE-STAR REVIEWS" },
-              { value: "2+ yrs", label: "SERVING THE BAY AREA" },
-              { value: "100%", label: "SATISFACTION RATE" },
+             { value: "42", label: "FIVE-STAR REVIEWS" },
+              { value: "4+ yrs", label: "SERVING THE BAY AREA" },
+             { value: "100%", label: "SATISFACTION RATE" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-bold text-yellow-400" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
@@ -236,7 +236,7 @@ export default function Home() {
               Read all 42 reviews →
             </Link>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a4a] mb-10" style={{ fontFamily: "'Playfair Display', serif" }}>
+         <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a4a] mb-10" style={{ fontFamily: "'Playfair Display', serif" }}>
             Neighbors Are Asking for Phil's Number
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -347,8 +347,8 @@ export default function Home() {
                 Window Type Visual Guide
               </span>
             </div>
-            <img
-              src="/manus-storage/pricing-guide_878cf7c1.png"
+           <img
+              src="/manus-storage/pricing-guide-v2_fa584588.png"
               alt="Visual guide showing different window types and their pane counts for pricing"
               className="w-full h-auto"
             />
