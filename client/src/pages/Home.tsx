@@ -189,30 +189,30 @@ export default function Home() {
 
       {/* Pricing */}
       <section className="bg-white py-16">
-        <div className="container mx-auto px-4 max-w-7xl">
+       <div className="container mx-auto px-4 max-w-7xl">
+         {/* Window Type Visual Guide — above the pricing table */}
+         <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-8">
+           <div className="bg-gray-50 px-5 py-2 border-b border-gray-200">
+             <span className="text-xs font-bold text-[#0d7a8a] uppercase tracking-widest" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+               Window Type Visual Guide
+             </span>
+           </div>
+           <img
+             src="/manus-storage/pricing-guide-v2_fa584588.png"
+             alt="Visual guide showing different window types and their pane counts for pricing"
+             className="w-full h-auto"
+           />
+         </div>
           <span className="text-xs font-bold text-[#0d7a8a] uppercase tracking-widest" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
             Transparent Pricing
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a4a] mt-2 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
             Simple Per-Pane Pricing
           </h2>
-         <p className="text-sm text-gray-600 mb-8 max-w-xl" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-           Starting at <strong>$20 per pane</strong>. Each window type counts as a set number of panes. Call for a free quote based on your specific home or business.
-         </p>
-          {/* Window Type Visual Guide — above the pricing table */}
-          <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-8">
-            <div className="bg-gray-50 px-5 py-2 border-b border-gray-200">
-              <span className="text-xs font-bold text-[#0d7a8a] uppercase tracking-widest" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-                Window Type Visual Guide
-              </span>
-            </div>
-            <img
-              src="/manus-storage/pricing-guide-v2_fa584588.png"
-              alt="Visual guide showing different window types and their pane counts for pricing"
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-8">
+          <p className="text-sm text-gray-600 mb-8 max-w-xl" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+            Starting at <strong>$20 per pane</strong>. Each window type counts as a set number of panes. Call for a free quote based on your specific home or business.
+          </p>
+         <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-8">
            <table className="w-full text-sm">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-200">
