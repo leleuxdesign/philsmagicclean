@@ -187,6 +187,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <span className="text-xs font-bold text-[#0d7a8a] uppercase tracking-widest" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+            Transparent Pricing
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a4a] mt-2 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Simple Per-Pane Pricing
+          </h2>
+          <p className="text-sm text-gray-600 mb-8 max-w-xl" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+            Starting at <strong>$20 per pane</strong>. Each window type counts as a set number of panes. Call for a free quote based on your specific home or business.
+          </p>
+          <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-8">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-gray-50 border-b border-gray-200">
+                  <th className="text-left px-5 py-3 font-semibold text-gray-700 uppercase text-xs tracking-wider" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+                    Window Type
+                  </th>
+                  <th className="text-right px-5 py-3 font-semibold text-gray-700 uppercase text-xs tracking-wider" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+                    Pane Count
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {pricingRows.map((row, i) => (
+                  <tr key={row.type} className={`border-b border-gray-100 last:border-0 ${row.bold ? "bg-gray-50" : ""}`}>
+                    <td className={`px-5 py-3 text-gray-700 ${row.bold ? "font-bold" : ""}`} style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+                      {row.type}
+                    </td>
+                    <td className={`px-5 py-3 text-right text-[#0d7a8a] ${row.bold ? "font-bold" : ""}`} style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+                      {row.panes}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Pricing Guide Image */}
+          <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-4">
+            <div className="bg-gray-50 px-5 py-2 border-b border-gray-200">
+              <span className="text-xs font-bold text-[#0d7a8a] uppercase tracking-widest" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+                Window Type Visual Guide
+              </span>
+            </div>
+           <img
+              src="/manus-storage/pricing-guide-v2_fa584588.png"
+              alt="Visual guide showing different window types and their pane counts for pricing"
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-gray-500" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+            Pricing varies by property. Call{" "}
+            <a href="tel:6506600430" className="text-[#0d7a8a] no-underline hover:underline">
+              650-660-0430
+            </a>{" "}
+            for a free estimate.
+          </p>
+        </div>
+      </section>
+
       {/* Services */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -298,68 +360,6 @@ export default function Home() {
               ✅ Licensed &amp; Insured · Burlingame, CA
             </span>
           </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <span className="text-xs font-bold text-[#0d7a8a] uppercase tracking-widest" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-            Transparent Pricing
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a4a] mt-2 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Simple Per-Pane Pricing
-          </h2>
-          <p className="text-sm text-gray-600 mb-8 max-w-xl" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-            Starting at <strong>$20 per pane</strong>. Each window type counts as a set number of panes. Call for a free quote based on your specific home or business.
-          </p>
-          <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-8">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="bg-gray-50 border-b border-gray-200">
-                  <th className="text-left px-5 py-3 font-semibold text-gray-700 uppercase text-xs tracking-wider" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-                    Window Type
-                  </th>
-                  <th className="text-right px-5 py-3 font-semibold text-gray-700 uppercase text-xs tracking-wider" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-                    Pane Count
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingRows.map((row, i) => (
-                  <tr key={row.type} className={`border-b border-gray-100 last:border-0 ${row.bold ? "bg-gray-50" : ""}`}>
-                    <td className={`px-5 py-3 text-gray-700 ${row.bold ? "font-bold" : ""}`} style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-                      {row.type}
-                    </td>
-                    <td className={`px-5 py-3 text-right text-[#0d7a8a] ${row.bold ? "font-bold" : ""}`} style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-                      {row.panes}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Pricing Guide Image */}
-          <div className="max-w-2xl border border-gray-200 rounded-lg overflow-hidden mb-4">
-            <div className="bg-gray-50 px-5 py-2 border-b border-gray-200">
-              <span className="text-xs font-bold text-[#0d7a8a] uppercase tracking-widest" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-                Window Type Visual Guide
-              </span>
-            </div>
-           <img
-              src="/manus-storage/pricing-guide-v2_fa584588.png"
-              alt="Visual guide showing different window types and their pane counts for pricing"
-              className="w-full h-auto"
-            />
-          </div>
-          <p className="text-sm text-gray-500" style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
-            Pricing varies by property. Call{" "}
-            <a href="tel:6506600430" className="text-[#0d7a8a] no-underline hover:underline">
-              650-660-0430
-            </a>{" "}
-            for a free estimate.
-          </p>
         </div>
       </section>
 
