@@ -151,15 +151,15 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex-shrink-0 w-full md:w-80">
-              <div className="border border-gray-200 rounded-lg p-6 flex flex-col items-center shadow-sm">
-                <img
-                  src="/manus-storage/logo_02bb77ca.jpg"
-                  alt="Phil's Magic Cleaning logo"
-                  className="w-48 h-auto mb-2"
-                />
-              </div>
-            </div>
+           <div className="flex-shrink-0 w-full md:w-80">
+             <div className="border border-gray-200 rounded-lg p-6 flex flex-col items-center shadow-sm">
+               <img
+                  src="/manus-storage/pricing-guide-v2_fa584588.png"
+                  alt="Window types and pricing guide"
+                  className="w-full h-auto"
+               />
+             </div>
+           </div>
           </div>
         </div>
       </section>
