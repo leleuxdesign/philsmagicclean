@@ -36,7 +36,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 no-underline">
             <img
-              src="/manus-storage/logo_02bb77ca.jpg"
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/118996510/OxZZcKSTsAXFjGTF.jpg"
               alt="Phil's Magic Cleaning logo"
               className="h-10 w-auto"
             />
@@ -151,7 +151,7 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 no-underline mb-3">
               <img
-                src="/manus-storage/logo_02bb77ca.jpg"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/118996510/OxZZcKSTsAXFjGTF.jpg"
                 alt="Phil's Magic Cleaning logo"
                 className="h-10 w-auto"
               />
